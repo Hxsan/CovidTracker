@@ -14,10 +14,9 @@ public class GUIManager extends Application{
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("Panel1"), 600, 400);
+        scene = new Scene(loadFXML("Panel1"), 730, 505);
         stage.setScene(scene);
-        stage.setMaxHeight(450.0);
-        stage.setMaxWidth(630.0);
+        stage.sizeToScene();
         stage.show();
     }
 
