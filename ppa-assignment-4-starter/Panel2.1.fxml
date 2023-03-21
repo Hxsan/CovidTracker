@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="399.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="543.0" prefWidth="399.0">
+         <children>
+            <AnchorPane prefHeight="35.0" prefWidth="399.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="-10.0" layoutY="-17.0" prefHeight="73.0" prefWidth="179.0" text="Borough Name">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <SplitMenuButton alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="320.0" layoutY="7.0" mnemonicParsing="false" text="Sort By">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Date" />
+                        <MenuItem mnemonicParsing="false" text="Retail and Recreation" />
+                        <MenuItem mnemonicParsing="false" text="Grocery  and Pharmacy" />
+                        <MenuItem mnemonicParsing="false" text="Parks" />
+                        <MenuItem mnemonicParsing="false" text="Transit Stations" />
+                        <MenuItem mnemonicParsing="false" text="Work Places" />
+                        <MenuItem mnemonicParsing="false" text="Residential" />
+                        <MenuItem mnemonicParsing="false" text="New Cases" />
+                      <MenuItem mnemonicParsing="false" text="Total Cases" />
+                        <MenuItem mnemonicParsing="false" text="New Deaths" />
+                        <MenuItem mnemonicParsing="false" text="Total Deaths" />
+                    </items>
+                  </SplitMenuButton>
+               </children>
+            </AnchorPane>
+            <ScrollPane prefHeight="398.0" prefWidth="399.0" />
+         </children>
+      </VBox>
+   </children>
+</Pane>
