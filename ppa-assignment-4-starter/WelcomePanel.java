@@ -56,11 +56,20 @@ public class WelcomePanel {
     }
     
     @FXML
-    private void ProcessDates(){
+    private Boolean ProcessDates(){
         nextButton.setDisable(true);
         if(getValidity() == true){
             nextButton.setDisable(false);
             errorLabel.setText("");
+            return true;
+        }
+        return false;
+    }
+    
+    @FXML
+    private void switchToBoroughs() throws IOException{
+        if(ProcessDates() == true){
+            GUIManager.setRoot("Panel2");
         }
     }
 

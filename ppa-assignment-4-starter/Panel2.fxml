@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="505.0" maxWidth="730.0" minHeight="0.0" minWidth="0.0" prefHeight="505.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BoroughsPanel">
+<Pane maxHeight="505.0" maxWidth="730.0" minHeight="505.0" minWidth="730.0" prefHeight="505.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BoroughPanels">
    <children>
       <VBox prefHeight="505.0" prefWidth="730.0">
          <children>
@@ -215,7 +215,7 @@
                </children></Pane>
             <Pane depthTest="DISABLE" prefHeight="53.0" prefWidth="730.0">
                <children>
-                  <Button fx:id="prevButton" layoutX="5.0" layoutY="5.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="59.0" text="&lt;---" textAlignment="RIGHT">
+                  <Button fx:id="prevButton" layoutX="5.0" layoutY="5.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="59.0" text="&lt;---" textAlignment="RIGHT" onAction="#switchToWelcome">
                      <font>
                         <Font size="8.0" />
                      </font>
