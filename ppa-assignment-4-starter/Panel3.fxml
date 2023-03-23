@@ -55,7 +55,7 @@
                </children></Pane>
             <Pane depthTest="DISABLE" prefHeight="36.0" prefWidth="600.0">
                <children>
-                  <Button fx:id="prevButton" layoutX="5.0" layoutY="5.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="59.0" text="&lt;---" textAlignment="RIGHT">
+                  <Button fx:id="prevButton" layoutX="5.0" layoutY="5.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="59.0" text="&lt;---" textAlignment="RIGHT" onAction="#switchToBorough">
                      <font>
                         <Font size="8.0" />
                      </font>

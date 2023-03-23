@@ -14,39 +14,39 @@
          <children>
             <Pane prefHeight="482.0" prefWidth="730.0" style="-fx-border-color: grey;">
                <children>
-                  <Circle fill="DODGERBLUE" layoutX="456.0" layoutY="170.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="163.0" layoutY="170.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="237.0" layoutY="170.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="311.0" layoutY="170.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="383.0" layoutY="170.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="604.0" layoutY="170.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="530.0" layoutY="170.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="420.0" layoutY="236.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="127.0" layoutY="236.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="201.0" layoutY="236.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="275.0" layoutY="236.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="347.0" layoutY="236.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="568.0" layoutY="236.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="494.0" layoutY="236.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="457.0" layoutY="298.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="164.0" layoutY="298.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="238.0" layoutY="298.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="312.0" layoutY="298.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="384.0" layoutY="298.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="531.0" layoutY="298.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="493.0" layoutY="364.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="200.0" layoutY="364.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="274.0" layoutY="364.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="348.0" layoutY="364.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="420.0" layoutY="364.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="237.0" layoutY="430.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="311.0" layoutY="430.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="385.0" layoutY="430.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="457.0" layoutY="430.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="272.0" layoutY="104.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="346.0" layoutY="104.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="420.0" layoutY="104.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="383.0" layoutY="38.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Hackney" fill="DODGERBLUE" layoutX="456.0" layoutY="170.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Harrow" fill="DODGERBLUE" layoutX="163.0" layoutY="170.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Brent" fill="DODGERBLUE" layoutX="237.0" layoutY="170.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Camden" fill="DODGERBLUE" layoutX="311.0" layoutY="170.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Islington" fill="DODGERBLUE" layoutX="383.0" layoutY="170.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Havering" fill="DODGERBLUE" layoutX="604.0" layoutY="170.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Redbridge" fill="DODGERBLUE" layoutX="530.0" layoutY="170.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Tower_Hamlets" fill="DODGERBLUE" layoutX="420.0" layoutY="236.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Hillingdon" fill="DODGERBLUE" layoutX="127.0" layoutY="236.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Ealing" fill="DODGERBLUE" layoutX="201.0" layoutY="236.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Kensington" fill="DODGERBLUE" layoutX="275.0" layoutY="236.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Westminister" fill="DODGERBLUE" layoutX="347.0" layoutY="236.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Barking" fill="DODGERBLUE" layoutX="568.0" layoutY="236.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Newham" fill="DODGERBLUE" layoutX="494.0" layoutY="236.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Greenwich" fill="DODGERBLUE" layoutX="457.0" layoutY="298.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Hounslow" fill="DODGERBLUE" layoutX="164.0" layoutY="298.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Hammersmith" fill="DODGERBLUE" layoutX="238.0" layoutY="298.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Wandsworth" fill="DODGERBLUE" layoutX="312.0" layoutY="298.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="City_of_London" fill="DODGERBLUE" layoutX="384.0" layoutY="298.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Bexley" fill="DODGERBLUE" layoutX="531.0" layoutY="298.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Lewisham" fill="DODGERBLUE" layoutX="493.0" layoutY="364.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Richmond" fill="DODGERBLUE" layoutX="200.0" layoutY="364.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Merton" fill="DODGERBLUE" layoutX="274.0" layoutY="364.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Lambeth" fill="DODGERBLUE" layoutX="348.0" layoutY="364.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Southwark" fill="DODGERBLUE" layoutX="420.0" layoutY="364.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Kingston" fill="DODGERBLUE" layoutX="237.0" layoutY="430.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Sutton" fill="DODGERBLUE" layoutX="311.0" layoutY="430.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Croydon" fill="DODGERBLUE" layoutX="385.0" layoutY="430.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Bromley" fill="DODGERBLUE" layoutX="457.0" layoutY="430.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Barnet" fill="DODGERBLUE" layoutX="272.0" layoutY="104.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Haringey" fill="DODGERBLUE" layoutX="346.0" layoutY="104.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Walthamstow" fill="DODGERBLUE" layoutX="420.0" layoutY="104.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
+                  <Circle fx:id="Enfield" fill="DODGERBLUE" layoutX="383.0" layoutY="38.0" radius="33.0" stroke="BLACK" strokeType="INSIDE" onAction="#switchToSpecificBorough" />
                   <Label layoutX="364.0" layoutY="23.0" text="ENFI">
                      <font>
                         <Font size="20.0" />
@@ -215,12 +215,12 @@
                </children></Pane>
             <Pane depthTest="DISABLE" prefHeight="53.0" prefWidth="730.0">
                <children>
-                  <Button fx:id="prevButton" layoutX="5.0" layoutY="5.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="59.0" text="&lt;---" textAlignment="RIGHT" onAction="#switchToWelcome">
+                  <Button fx:id="prevButton" layoutX="5.0" layoutY="5.0" mnemonicParsing="false" onAction="#switchToWelcome" prefHeight="18.0" prefWidth="59.0" text="&lt;---" textAlignment="RIGHT">
                      <font>
                         <Font size="8.0" />
                      </font>
                   </Button>
-                  <Button fx:id="nextButton" layoutX="657.0" layoutY="5.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="59.0" text="---&gt;" textAlignment="RIGHT">
+                  <Button fx:id="nextButton" layoutX="657.0" layoutY="5.0" mnemonicParsing="false" onAction="#switchToStatistics" prefHeight="18.0" prefWidth="59.0" text="---&gt;" textAlignment="RIGHT">
                      <font>
                         <Font size="8.0" />
                      </font>
