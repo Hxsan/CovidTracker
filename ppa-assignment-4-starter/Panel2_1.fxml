@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="946.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="946.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProcessData">
    <children>
       <VBox prefHeight="389.0" prefWidth="946.0">
          <children>
@@ -24,10 +24,11 @@
             </AnchorPane>
             <ScrollPane prefHeight="333.0" prefWidth="946.0">
                <content>
-                  <TableView fx:id="Table" prefHeight="305.0" prefWidth="999.0">
+                  <TableView fx:id="Table" prefHeight="306.0" prefWidth="1057.0">
                     <columns>
-                      <TableColumn fx:id="Date" prefWidth="50.39999467134476" text="Date" />
-                      <TableColumn fx:id="Retail_and_Recreation" prefWidth="139.9999656677246" text="Retail and Recreation" />
+                      <TableColumn fx:id="Date" prefWidth="60.00000149011612" text="Date" />
+                        <TableColumn fx:id="Borough" prefWidth="60.00000149011612" text="Borough" />
+                      <TableColumn fx:id="Retail_and_Recreation" prefWidth="130.39998626708984" text="Retail and Recreation" />
                         <TableColumn fx:id="Grocery_and_Pharmacy" minWidth="1.60003662109375" prefWidth="139.20005798339844" text="Grocery and Pharmacy" />
                         <TableColumn fx:id="Parks" minWidth="0.0" prefWidth="44.800048828125" text="Parks" />
                         <TableColumn fx:id="Transit_Stations" prefWidth="100.800048828125" text="Transit Stations" />

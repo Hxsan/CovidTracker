@@ -26,13 +26,12 @@ public class BoroughPanels extends GUIManager{
     private void switchToSpecificBorough(MouseEvent event) throws IOException{
         Parent root;
         try {
-            
             root= FXMLLoader.load(getClass().getClassLoader().getResource("Panel2_1.fxml"));
             Stage stage = new Stage();
             stage.setTitle(process.getFxidString(event));
             stage.setScene(new Scene(root, 946, 390));
             stage.show();
-            process.handleData(event);
+            process.initialise(event);
         }
         catch (IOException e) {
             e.printStackTrace();
