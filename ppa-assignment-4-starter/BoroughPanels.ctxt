@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=BoroughPanels
+comment1.params=
+comment1.target=void\ switchToWelcome()
+comment2.params=
+comment2.target=void\ switchToStatistics()
+comment3.params=event
+comment3.target=void\ switchToSpecificBorough(javafx.scene.input.MouseEvent)
+numComments=4

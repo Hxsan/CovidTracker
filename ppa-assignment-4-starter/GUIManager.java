@@ -1,4 +1,3 @@
- 
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -8,8 +7,9 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 
-public class GUIManager extends Application{
 
+public class GUIManager extends Application{
+    
     private static Scene scene;
 
     @Override
@@ -17,10 +17,11 @@ public class GUIManager extends Application{
         scene = new Scene(loadFXML("Panel1"), 730, 505);
         stage.setScene(scene);
         stage.sizeToScene();
+        stage.setTitle("Covid Borough Viewer");
         stage.show();
     }
 
-    static void setRoot(String fxml) throws IOException {
+    public static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
     }
 

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=CovidData
-comment0.text=\n\ Represents\ one\ record\ in\ the\ COVID\ dataset.\n\ This\ is\ essentially\ one\ row\ in\ the\ data\ table.\ Each\ column\n\ has\ a\ corresponding\ field.\n
+comment0.text=\r\n\ Represents\ one\ record\ in\ the\ COVID\ dataset.\r\n\ This\ is\ essentially\ one\ row\ in\ the\ data\ table.\ Each\ column\r\n\ has\ a\ corresponding\ field.\r\n
 comment1.params=date\ borough\ retailRecreationGMR\ groceryPharmacyGMR\ parksGMR\ transitGMR\ workplacesGMR\ residentialGMR\ newCases\ totalCases\ newDeaths\ totalDeaths
 comment1.target=CovidData(java.lang.String,\ java.lang.String,\ int,\ int,\ int,\ int,\ int,\ int,\ int,\ int,\ int,\ int)
 comment10.params=

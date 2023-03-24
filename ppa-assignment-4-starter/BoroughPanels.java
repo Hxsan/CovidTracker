@@ -7,8 +7,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.scene.input.MouseEvent;
 
 public class BoroughPanels extends GUIManager{
+    private ProcessData process = new ProcessData();
+    
     @FXML
     private void switchToWelcome() throws IOException{
         GUIManager.setRoot("Panel1");
@@ -20,14 +23,20 @@ public class BoroughPanels extends GUIManager{
     }
     
     @FXML
-    private void switchToSpecificBorough() throws IOException{
-        FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("Panel2_1.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
-        Stage stage = new Stage();
-        stage.setTitle("Borough");
-        stage.setScene(scene);
-        stage.show();
-        // Fix this !!!
+    private void switchToSpecificBorough(MouseEvent event) throws IOException{
+        Parent root;
+        try {
+            
+            root= FXMLLoader.load(getClass().getClassLoader().getResource("Panel2_1.fxml"));
+            Stage stage = new Stage();
+            stage.setTitle(process.getFxidString(event));
+            stage.setScene(new Scene(root, 946, 390));
+            stage.show();
+            process.handleData(event);
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
     }
+
 }

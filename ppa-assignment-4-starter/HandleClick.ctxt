@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=HandleClick
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ HandleClick\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=event
+comment1.target=void\ handle(javafx.scene.input.MouseEvent)
+comment2.params=event
+comment2.target=java.lang.String\ getObjectId(javafx.scene.input.MouseEvent)
+numComments=3

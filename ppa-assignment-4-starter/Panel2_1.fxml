@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="946.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="389.0" prefWidth="946.0">
+         <children>
+            <AnchorPane prefHeight="35.0" prefWidth="399.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="-10.0" layoutY="-17.0" prefHeight="73.0" prefWidth="179.0" text="Borough Name">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ScrollPane prefHeight="333.0" prefWidth="946.0">
+               <content>
+                  <TableView fx:id="Table" prefHeight="305.0" prefWidth="999.0">
+                    <columns>
+                      <TableColumn fx:id="Date" prefWidth="50.39999467134476" text="Date" />
+                      <TableColumn fx:id="Retail_and_Recreation" prefWidth="139.9999656677246" text="Retail and Recreation" />
+                        <TableColumn fx:id="Grocery_and_Pharmacy" minWidth="1.60003662109375" prefWidth="139.20005798339844" text="Grocery and Pharmacy" />
+                        <TableColumn fx:id="Parks" minWidth="0.0" prefWidth="44.800048828125" text="Parks" />
+                        <TableColumn fx:id="Transit_Stations" prefWidth="100.800048828125" text="Transit Stations" />
+                        <TableColumn fx:id="Workplaces" prefWidth="79.199951171875" text="Workplaces" />
+                        <TableColumn fx:id="Residential" prefWidth="76.800048828125" text="Residential" />
+                        <TableColumn fx:id="New_Cases" prefWidth="82.4000244140625" text="New Cases" />
+                        <TableColumn fx:id="Total_Cases" text="Total Cases" />
+                        <TableColumn fx:id="New_Deaths" prefWidth="86.39990234375" text="New Deaths" />
+                        <TableColumn fx:id="Total_Deaths" prefWidth="83.199951171875" text="Total Deaths" />
+                    </columns>
+                  </TableView>
+               </content></ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</Pane>

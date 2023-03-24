@@ -8,7 +8,7 @@ import java.util.Arrays;
 import com.opencsv.CSVReader;
 import java.net.URISyntaxException;
 
-public class CovidDataLoader {
+public class CovidDataLoader{
  
     /** 
      * Return an ArrayList containing the rows in the Covid London data set csv file.

@@ -72,5 +72,13 @@ public class WelcomePanel extends GUIManager{
             GUIManager.setRoot("Panel2");
         }
     }
-
+    
+    public LocalDate getFromDate(){
+        return fromDate.getValue();
+    }
+    
+    public LocalDate getToDate(){
+        return toDate.getValue();
+    }
+    
 }
