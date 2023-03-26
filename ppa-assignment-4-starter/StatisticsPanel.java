@@ -7,10 +7,11 @@
  */
 import java.io.IOException;
 import javafx.fxml.FXML;
+import javafx.scene.input.MouseEvent;
 
-public class StatisticsPanel extends GUIManager{
+public class StatisticsPanel{
     @FXML
-    private void switchToBorough() throws IOException{
+    private void switchToBorough(MouseEvent event) throws IOException{
         GUIManager.setRoot("Panel2");
     }
 }

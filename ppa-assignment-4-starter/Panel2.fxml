@@ -26,7 +26,7 @@
                   <Circle fx:id="Ealing" fill="DODGERBLUE" layoutX="201.0" layoutY="236.0"  onMouseClicked="#switchToSpecificBorough" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
                   <Circle fx:id="Kensington" fill="DODGERBLUE" layoutX="275.0" layoutY="236.0"  onMouseClicked="#switchToSpecificBorough" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
                   <Circle fx:id="Westminister" fill="DODGERBLUE" layoutX="347.0" layoutY="236.0"  onMouseClicked="#switchToSpecificBorough" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fx:id="Barking" fill="DODGERBLUE" layoutX="568.0" layoutY="236.0"  onMouseClicked="#switchToSpecificBorough" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Barking_And_Dagenham" fill="DODGERBLUE" layoutX="568.0" layoutY="236.0"  onMouseClicked="#switchToSpecificBorough" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
                   <Circle fx:id="Newham" fill="DODGERBLUE" layoutX="494.0" layoutY="236.0"  onMouseClicked="#switchToSpecificBorough" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
                   <Circle fx:id="Greenwich" fill="DODGERBLUE" layoutX="457.0" layoutY="298.0"  onMouseClicked="#switchToSpecificBorough" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
                   <Circle fx:id="Hounslow" fill="DODGERBLUE" layoutX="164.0" layoutY="298.0"  onMouseClicked="#switchToSpecificBorough" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
@@ -39,7 +39,7 @@
                   <Circle fx:id="Merton" fill="DODGERBLUE" layoutX="274.0" layoutY="364.0"  onMouseClicked="#switchToSpecificBorough" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
                   <Circle fx:id="Lambeth" fill="DODGERBLUE" layoutX="348.0" layoutY="364.0"  onMouseClicked="#switchToSpecificBorough" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
                   <Circle fx:id="Southwark" fill="DODGERBLUE" layoutX="420.0" layoutY="364.0"  onMouseClicked="#switchToSpecificBorough" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fx:id="Kingston" fill="DODGERBLUE" layoutX="237.0" layoutY="430.0"  onMouseClicked="#switchToSpecificBorough" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fx:id="Kingston_Upon_Thames" fill="DODGERBLUE" layoutX="237.0" layoutY="430.0"  onMouseClicked="#switchToSpecificBorough" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
                   <Circle fx:id="Sutton" fill="DODGERBLUE" layoutX="311.0" layoutY="430.0"  onMouseClicked="#switchToSpecificBorough" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
                   <Circle fx:id="Croydon" fill="DODGERBLUE" layoutX="385.0" layoutY="430.0"  onMouseClicked="#switchToSpecificBorough" radius="33.0" stroke="BLACK" strokeType="INSIDE" />
                   <Circle fx:id="Bromley" fill="DODGERBLUE" layoutX="457.0" layoutY="430.0"  onMouseClicked="#switchToSpecificBorough" radius="33.0" stroke="BLACK" strokeType="INSIDE" />

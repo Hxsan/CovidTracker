@@ -1,12 +1,9 @@
 #BlueJ class context
 comment0.target=ProcessData
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ ProcessData\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=ProcessData()
 comment2.params=event
 comment2.target=java.lang.String\ getFxidString(javafx.scene.input.MouseEvent)
 comment3.params=event
 comment3.target=javafx.collections.ObservableList\ filterData(javafx.scene.input.MouseEvent)
-comment4.params=event
-comment4.target=void\ initialise(javafx.scene.input.MouseEvent)
-numComments=5
+numComments=4
