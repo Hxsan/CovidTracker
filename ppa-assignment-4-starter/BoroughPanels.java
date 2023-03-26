@@ -8,9 +8,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TableColumn;
 
-public class BoroughPanels extends GUIManager{
-    private ProcessData process = new ProcessData();
+public class BoroughPanels{
+    private HandleClick clickEvent = new HandleClick();
     
     @FXML
     private void switchToWelcome() throws IOException{
@@ -24,18 +26,11 @@ public class BoroughPanels extends GUIManager{
     
     @FXML
     private void switchToSpecificBorough(MouseEvent event) throws IOException{
-        Parent root;
-        try {
-            root= FXMLLoader.load(getClass().getClassLoader().getResource("Panel2_1.fxml"));
-            Stage stage = new Stage();
-            stage.setTitle(process.getFxidString(event));
-            stage.setScene(new Scene(root, 946, 390));
-            stage.show();
-            process.initialise(event);
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
+        Stage stageTwo = new Stage();
+        TableLoaderLayout tableLoader = new TableLoaderLayout();
+        stageTwo.setTitle(clickEvent.getObjectId(event));
+        stageTwo.setScene(new Scene(tableLoader, 946, 390));
+        tableLoader.initialize(event);
+        stageTwo.show();
     }
-
 }

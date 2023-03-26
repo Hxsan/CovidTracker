@@ -7,7 +7,7 @@ import javafx.scene.control.Label;
 
 import java.time.LocalDate;
 
-public class WelcomePanel extends GUIManager{
+public class WelcomePanel{
     @FXML private DatePicker toDate; // Variable for the "from" date, corresponding to fx:id on fxml
     @FXML private DatePicker fromDate; // Variable for the "to" date, corresponding to fx:id on fxml
     @FXML private Button prevButton;
