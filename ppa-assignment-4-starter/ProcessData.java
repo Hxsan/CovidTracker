@@ -28,7 +28,7 @@ public class ProcessData{
     
     private HandleClick circleClick;
     private CovidDataLoader covidDataLoader;
-    private ArrayList<CovidData> Coviddata;
+    public ArrayList<CovidData> Coviddata;
     private ObservableList<CovidData> observeList = FXCollections.observableArrayList();
     private HashMap<String, Integer> boroughData;
     
@@ -85,7 +85,7 @@ public class ProcessData{
         return boroughData;
     }
     
-    private Date convertDate(String date){
+    public Date convertDate(String date){
         try{
             formattedDate = form.parse(date);
         }
