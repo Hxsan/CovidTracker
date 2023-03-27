@@ -9,6 +9,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.collections.ObservableList;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
+import javafx.scene.shape.Circle;
+import javafx.scene.paint.Color;
 
 import java.time.LocalDate;
 import java.text.DateFormat;
@@ -79,13 +81,13 @@ public class ProcessData{
     public HashMap<String, Integer> getTotalDeathsHashMap(){
         for(CovidData data : Coviddata){
             if(data.getDate().equals("2022-10-15")){
-                boroughData.put(data.getBorough(), data.getTotalDeaths());
+                boroughData.put(data.getBorough().replace(" ", "_"), data.getTotalDeaths());
             }
         }
         return boroughData;
     }
     
-    public Date convertDate(String date){
+    private Date convertDate(String date){
         try{
             formattedDate = form.parse(date);
         }
