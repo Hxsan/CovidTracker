@@ -31,30 +31,30 @@ public class TableLoaderLayout extends Pane {
     public TableLoaderLayout() {
         
         VBox root = new VBox();
-        root.setPrefSize(946, 390);
+        root.setPrefSize(1030, 380);
         
         AnchorPane anchorPane = new AnchorPane();
-        anchorPane.setPrefSize(399, 35);
+        anchorPane.setPrefSize(1030, 51);
         
         boroughName = new Label("Borough Name");
         boroughName.setFont(new Font("System Bold", 18));
-        boroughName.setPrefSize(179, 73);
-        boroughName.setLayoutX(-10);
-        boroughName.setLayoutY(-17);
+        boroughName.setPrefSize(1030, 58);
+        boroughName.setLayoutX(-1);
+        boroughName.setLayoutY(-1);
         boroughName.setAlignment(javafx.geometry.Pos.CENTER);
         anchorPane.getChildren().add(boroughName);
         
-        ScrollPane scrollPane = new ScrollPane();
-        scrollPane.setPrefSize(946, 333);
+        //ScrollPane scrollPane = new ScrollPane();
+        //scrollPane.setPrefSize(946, 333);
         
         table = new TableView();
-        table.setPrefSize(1057, 306);
+        table.setPrefSize(1030, 306);
         
         dateCol = new TableColumn("Date");
-        dateCol.setPrefWidth(60);
+        dateCol.setPrefWidth(100);
         
         boroughCol = new TableColumn("Borough");
-        boroughCol.setPrefWidth(60);
+        boroughCol.setPrefWidth(200);
         
         retailAndRecreationCol = new TableColumn("Retail and Recreation");
         retailAndRecreationCol.setPrefWidth(130.4);
@@ -90,9 +90,9 @@ public class TableLoaderLayout extends Pane {
         table.getColumns().addAll(dateCol, boroughCol, retailAndRecreationCol, groceryAndPharmacyCol, parksCol, transitStationsCol,
                                 workplacesCol, residentialCol, newCasesCol, totalCasesCol, newDeathsCol, totalDeathsCol);
         
-        scrollPane.setContent(table);
+        //scrollPane.setContent(table);
         
-        root.getChildren().addAll(anchorPane, scrollPane);
+        root.getChildren().addAll(anchorPane, table);
         
         getChildren().add(root);
     

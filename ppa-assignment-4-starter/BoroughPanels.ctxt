@@ -1,9 +1,17 @@
 #BlueJ class context
 comment0.target=BoroughPanels
 comment1.params=
-comment1.target=void\ switchToWelcome()
+comment1.target=void\ addToArrList()
 comment2.params=
-comment2.target=void\ switchToStatistics()
-comment3.params=event
-comment3.target=void\ switchToSpecificBorough(javafx.scene.input.MouseEvent)
-numComments=4
+comment2.target=BoroughPanels()
+comment3.params=
+comment3.target=void\ switchToWelcome()
+comment4.params=
+comment4.target=void\ switchToStatistics()
+comment5.params=
+comment5.target=void\ changeCircleColour()
+comment6.params=value
+comment6.target=javafx.scene.paint.Color\ colourGrade(int)
+comment7.params=event
+comment7.target=void\ switchToSpecificBorough(javafx.scene.input.MouseEvent)
+numComments=8
