@@ -85,7 +85,7 @@ public class ProcessData{
         return boroughData;
     }
     
-    private Date convertDate(String date){
+    public Date convertDate(String date){
         try{
             formattedDate = form.parse(date);
         }

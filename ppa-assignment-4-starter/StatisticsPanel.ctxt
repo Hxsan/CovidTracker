@@ -1,5 +1,23 @@
 #BlueJ class context
 comment0.target=StatisticsPanel
-comment1.params=event
-comment1.target=void\ switchToBorough(javafx.scene.input.MouseEvent)
-numComments=2
+comment1.params=
+comment1.target=StatisticsPanel()
+comment10.params=
+comment10.target=int\ averageTransitStations()
+comment2.params=event
+comment2.target=void\ switchToBorough(javafx.scene.input.MouseEvent)
+comment3.params=
+comment3.target=void\ changeData()
+comment4.params=
+comment4.target=void\ nextData()
+comment5.params=
+comment5.target=void\ prevData()
+comment6.params=
+comment6.target=int\ calclulateTotalDeaths()
+comment7.params=
+comment7.target=double\ averageTotalCases()
+comment8.params=
+comment8.target=java.lang.String\ highestTotalDeaths()
+comment9.params=
+comment9.target=double\ averageParks()
+numComments=11
