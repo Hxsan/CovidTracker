@@ -41,6 +41,9 @@ public class ProcessData{
         boroughData = new HashMap<>();
     }
     
+    public ArrayList<CovidData> getCovidDataArr(){
+        return Coviddata;
+    }
     
     public static String getFromDate(){
         return fromDate;
@@ -87,7 +90,7 @@ public class ProcessData{
         return boroughData;
     }
     
-    private Date convertDate(String date){
+    public Date convertDate(String date){
         try{
             formattedDate = form.parse(date);
         }

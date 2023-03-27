@@ -25,12 +25,10 @@ public class StatisticsPanel{
     public StatisticsPanel(){
         process = new ProcessData();
         
-        
     }
     @FXML
-    private void switchToBorough(MouseEvent event) throws IOException{
+    private void switchToBorough() throws IOException{
         GUIManager.setRoot("Panel2");
-        
     }
     
     public void changeData(){
@@ -75,7 +73,7 @@ public class StatisticsPanel{
     public int calclulateTotalDeaths(){
         int toDeaths = 0;
         int fromDeaths = 0;
-        for(CovidData data : process.Coviddata){
+        for(CovidData data : process.getCovidDataArr()){
             if(data.getDate().equals(process.getFromDate())){
                 fromDeaths += data.getTotalDeaths();
             }
@@ -92,7 +90,7 @@ public class StatisticsPanel{
     public double averageTotalCases(){
         int toCases = 0;
         int fromCases = 0;
-        for(CovidData data : process.Coviddata){
+        for(CovidData data : process.getCovidDataArr()){
             if(data.getDate().equals(process.getFromDate())){
                 fromCases += data.getTotalCases();
             }
@@ -113,7 +111,7 @@ public class StatisticsPanel{
     public double averageParks(){
         int total =0;
         int count = 0;
-        for(CovidData key : process.Coviddata){
+        for(CovidData key : process.getCovidDataArr()){
             if(!(process.convertDate(key.getDate()).before(process.convertDate(process.getFromDate())) || process.convertDate(key.getDate()).after(process.convertDate(process.getToDate())))){
                 total += key.getParksGMR();
                 count +=1;
@@ -126,7 +124,7 @@ public class StatisticsPanel{
     public int averageTransitStations(){
         int total =0;
         int count = 0;
-        for(CovidData key : process.Coviddata){
+        for(CovidData key : process.getCovidDataArr()){
             if(!(process.convertDate(key.getDate()).before(process.convertDate(process.getFromDate())) || process.convertDate(key.getDate()).after(process.convertDate(process.getToDate())))){
                 total += key.getTransitGMR();
                 count +=1;
