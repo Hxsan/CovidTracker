@@ -28,7 +28,7 @@ public class ProcessData{
     
     private HandleClick circleClick;
     private CovidDataLoader covidDataLoader;
-    public ArrayList<CovidData> Coviddata;
+    private ArrayList<CovidData> Coviddata;
     private ObservableList<CovidData> observeList = FXCollections.observableArrayList();
     private HashMap<String, Integer> boroughData;
     
