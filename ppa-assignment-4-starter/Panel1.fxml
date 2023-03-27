@@ -52,7 +52,7 @@
                   </Label>
                   <ImageView fitHeight="101.0" fitWidth="107.0" layoutX="66.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../Downloads/covid2.jpg" />
+                        <Image url="@Covid.jpg" />
                      </image>
                   </ImageView>
                   <Button fx:id="dateProcess" layoutX="187.0" layoutY="349.0" mnemonicParsing="false" onAction="#ProcessDates" prefHeight="39.0" prefWidth="356.0" text="Process Dates Entered" />

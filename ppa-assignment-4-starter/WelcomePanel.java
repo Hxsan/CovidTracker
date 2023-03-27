@@ -4,6 +4,8 @@ import javafx.scene.control.DatePicker;
 import java.util.ArrayList;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import java.util.Date;
+
 
 import java.time.LocalDate;
 
@@ -24,6 +26,7 @@ public class WelcomePanel{
             errorLabel.setText("Enter a From/To date.");
         }
         String dateConv = toDate.getValue().toString();
+        ProcessData.setToDate(dateConv);
         System.out.println("The date is " + dateConv);
         return dateConv;
     }
@@ -36,6 +39,7 @@ public class WelcomePanel{
             errorLabel.setText("Enter a From/To date.");
         }
         String dateConv = fromDate.getValue().toString();
+        ProcessData.setFromDate(dateConv);
         System.out.println("The date is " + dateConv);
         return dateConv;
     }
@@ -56,7 +60,7 @@ public class WelcomePanel{
     }
     
     @FXML
-    private Boolean ProcessDates(){
+    private Boolean ProcessDates() throws IOException{
         nextButton.setDisable(true);
         if(getValidity() == true){
             nextButton.setDisable(false);
@@ -72,13 +76,4 @@ public class WelcomePanel{
             GUIManager.setRoot("Panel2");
         }
     }
-    
-    public LocalDate getFromDate(){
-        return fromDate.getValue();
-    }
-    
-    public LocalDate getToDate(){
-        return toDate.getValue();
-    }
-    
 }
