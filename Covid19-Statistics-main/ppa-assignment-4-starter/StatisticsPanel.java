@@ -32,6 +32,11 @@ public class StatisticsPanel{
         GUIManager.setRoot("Panel2");
     }
     
+    @FXML
+    private void switchToAffectedBorough() throws IOException{
+        GUIManager.setRoot("Panel4");
+    }
+    
     private void changeData(){
         if (statNumber == 0){
             Statistic.setText(String.valueOf(calclulateTotalDeaths()));
