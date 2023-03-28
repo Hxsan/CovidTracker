@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="417.0" maxWidth="622.0" minHeight="505.0" minWidth="730.0" prefHeight="417.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WelcomePanel">
+   <children>
+      <VBox layoutY="-1.0" prefHeight="505.0" prefWidth="730.0">
+         <children>
+            <Pane prefHeight="39.0" prefWidth="600.0">
+               <children>
+                  <DatePicker fx:id="toDate" layoutX="616.0" layoutY="7.0" onAction="#returnToDate" prefHeight="25.0" prefWidth="100.0" />
+                  <DatePicker fx:id="fromDate" layoutX="482.0" layoutY="7.0" onAction="#returnFromDate" prefHeight="25.0" prefWidth="100.0" />
+                  <Label layoutX="14.0" layoutY="7.0" prefHeight="25.0" prefWidth="204.0" text="Welcome!" />
+                  <Label layoutX="450.0" layoutY="11.0" prefHeight="17.0" prefWidth="38.0" text="From:" />
+                  <Label layoutX="596.0" layoutY="11.0" prefHeight="17.0" prefWidth="20.0" text="To:" />
+               </children>
+            </Pane>
+            <Pane prefHeight="431.0" prefWidth="730.0" style="-fx-border-color: grey; -fx-background-color: white;">
+               <children>
+                  <Label alignment="TOP_CENTER" layoutX="77.0" layoutY="88.0" prefHeight="31.0" prefWidth="583.0" text="INSTRUCTIONS: ">
+                     <font>
+                        <Font name="MS Outlook" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="77.0" layoutY="14.0" prefHeight="55.0" prefWidth="583.0" text="Welcome to the Covid Data Loader!">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="74.0" layoutY="119.0" prefHeight="46.0" prefWidth="583.0" text="Use the dates at the top right of your screen to choose the range for the dates you want">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="165.0" prefHeight="46.0" prefWidth="652.0" text="Once you have chosen dates, you can then use the buttons on the bottom left and right to navigate.">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="59.0" layoutY="211.0" prefHeight="55.0" prefWidth="613.0" text="These buttons are disabled until dates are within a valid range are chosen">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="101.0" fitWidth="107.0" layoutX="66.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Covid.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="dateProcess" layoutX="187.0" layoutY="349.0" mnemonicParsing="false" onAction="#ProcessDates" prefHeight="39.0" prefWidth="356.0" text="Process Dates Entered" />
+                  <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="284.0" prefHeight="39.0" prefWidth="718.0" textFill="#ff0707">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane depthTest="DISABLE" prefHeight="36.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="prevButton" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onAction="#switchToAffectedBoroughs" prefHeight="18.0" prefWidth="59.0" text="&lt;---" textAlignment="RIGHT">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="nextButton" layoutX="657.0" layoutY="9.0" mnemonicParsing="false" onAction="#switchToBoroughs" prefHeight="18.0" prefWidth="59.0" text="---&gt;" textAlignment="RIGHT">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</Pane>

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=GUIManager
+comment1.params=stage
+comment1.target=void\ start(javafx.stage.Stage)
+comment2.params=fxml
+comment2.target=void\ setRoot(java.lang.String)
+comment3.params=fxml
+comment3.target=javafx.scene.Parent\ loadFXML(java.lang.String)
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

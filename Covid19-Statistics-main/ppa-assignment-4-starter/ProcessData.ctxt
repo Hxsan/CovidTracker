@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=ProcessData
+comment1.params=
+comment1.target=ProcessData()
+comment10.params=date
+comment10.target=java.util.Date\ convertDate(java.lang.String)
+comment2.params=
+comment2.target=java.util.ArrayList\ getCovidDataArr()
+comment3.params=
+comment3.target=java.lang.String\ getFromDate()
+comment4.params=
+comment4.target=java.lang.String\ getToDate()
+comment5.params=date
+comment5.target=void\ setFromDate(java.lang.String)
+comment6.params=date
+comment6.target=void\ setToDate(java.lang.String)
+comment7.params=event
+comment7.target=java.lang.String\ getFxidString(javafx.scene.input.MouseEvent)
+comment8.params=event
+comment8.target=javafx.collections.ObservableList\ filterData(javafx.scene.input.MouseEvent)
+comment9.params=
+comment9.target=java.util.HashMap\ getTotalDeathsHashMap()
+numComments=11

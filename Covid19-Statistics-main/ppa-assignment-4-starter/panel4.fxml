@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="505.0" minWidth="730.0" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AffectedBoroughsPanel">
+   <children>
+      <GridPane layoutY="54.0" prefHeight="413.0" prefWidth="730.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="212.0" prefWidth="248.0" style="-fx-border-color: black;" text="Highest Average Retail and Recreation GMR" textAlignment="CENTER" underline="true" wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="152.0" prefWidth="184.0" style="-fx-border-color: black;" text="Highest Average Grocery and Pharmacy GMR" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="1">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="145.0" prefWidth="179.0" style="-fx-border-color: black;" text="Highest Average Parks GMR" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="122.0" prefWidth="171.0" style="-fx-border-color: black;" text="Highest Average Workplaces GMR" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="4">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="132.0" prefWidth="173.0" style="-fx-border-color: black;" text="Highest Average Transit Stations GMR" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="3">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="133.0" prefWidth="194.0" style="-fx-border-color: black;" text="Highest Average Residential GMR" textAlignment="CENTER" underline="true" wrapText="true" GridPane.rowIndex="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="150.0" prefWidth="204.0" style="-fx-border-color: black;" text="Highest New Cases" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="137.0" prefWidth="193.0" style="-fx-border-color: black;" text="Highest Total Cases" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="114.0" prefWidth="171.0" style="-fx-border-color: black;" text="Highest New Deaths" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="116.0" prefWidth="164.0" style="-fx-border-color: black;" text="Highest Total Deaths" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="rnrStat" alignment="CENTER" prefHeight="125.0" prefWidth="182.0" text="{(BoroughName), (Statistic), (Date)}" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1">
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding></Label>
+            <Label fx:id="gnpStat" alignment="CENTER" prefHeight="153.0" prefWidth="197.0" text="{(BoroughName), (Statistic), (Date)}" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding></Label>
+            <Label fx:id="pStat" alignment="CENTER" prefHeight="181.0" prefWidth="152.0" text="{(BoroughName), (Statistic), (Date)}" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding></Label>
+            <Label fx:id="tsStat" alignment="CENTER" prefHeight="162.0" prefWidth="205.0" text="{(BoroughName), (Statistic), (Date)}" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding></Label>
+            <Label fx:id="wStat" alignment="CENTER" prefHeight="186.0" prefWidth="246.0" text="{(BoroughName), (Statistic), (Date)}" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding></Label>
+            <Label fx:id="rStat" alignment="CENTER" prefHeight="128.0" prefWidth="182.0" text="{(BoroughName), (Statistic), (Date)}" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="3">
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding></Label>
+            <Label fx:id="ncStat" alignment="CENTER" prefHeight="196.0" prefWidth="183.0" text="{(BoroughName), (Statistic), (Date)}" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding></Label>
+            <Label fx:id="tcStat" alignment="CENTER" prefHeight="125.0" prefWidth="204.0" text="{(BoroughName), (Statistic), (Date)}" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding></Label>
+            <Label fx:id="ndStat" alignment="CENTER" prefHeight="149.0" prefWidth="247.0" text="{(BoroughName), (Statistic), (Date)}" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding></Label>
+            <Label fx:id="tdStat" alignment="CENTER" prefHeight="106.0" prefWidth="166.0" text="{(BoroughName), (Statistic), (Date)}" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding></Label>
+         </children>
+      </GridPane>
+      <Label layoutX="227.0" text="Most Affected Boroughs">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Pane depthTest="DISABLE" layoutY="469.0" prefHeight="36.0" prefWidth="730.0" style="-fx-border-color: black;">
+         <children>
+            <Button fx:id="prevButton" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onAction="#switchToStatistics" prefHeight="18.0" prefWidth="59.0" text="&lt;---" textAlignment="RIGHT">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Button>
+            <Button fx:id="nextButton" layoutX="657.0" layoutY="9.0" mnemonicParsing="false" onAction="#switchToWelcome" prefHeight="18.0" prefWidth="59.0" text="---&gt;" textAlignment="RIGHT">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Pane>
+   </children>
+</Pane>
