@@ -1,9 +1,9 @@
- 
-
-/**
+ /**
  * Represents one record in the COVID dataset.
  * This is essentially one row in the data table. Each column
  * has a corresponding field.
+ * 
+ * @version: 3.1
  */ 
 
 public class CovidData {

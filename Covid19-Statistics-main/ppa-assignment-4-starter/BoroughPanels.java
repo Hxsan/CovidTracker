@@ -1,5 +1,10 @@
-/*
- * Class for the second panel, used to display boroughs to the user
+/**
+ * Panel used to display the Borough date within the specified date range
+ * to the user. This opens a secondary window to display specific borough information
+ * as well as a heat map to show the virility of the virus.
+ * 
+ * @version: 3.1
+ * @author: Mohammed Ahmed(K22026228), Shahriar Miah(K22023070), Christopher Herre(K22001776), Talal AlOhali(K21130307)
  */
 import java.io.IOException;
 import javafx.fxml.FXML;
@@ -8,8 +13,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TableColumn;
 import javafx.scene.shape.Circle;
 import javafx.scene.paint.Color;
 
@@ -91,11 +94,11 @@ public class BoroughPanels{
         boroughObjects.add(Hounslow);
     }
     
-
     private ProcessData process;
     
     public BoroughPanels(){  
         process = new ProcessData();
+        
     }
     
     @FXML
@@ -108,6 +111,10 @@ public class BoroughPanels{
         GUIManager.setRoot("Panel3");
     }
     
+    /**
+     * Changes the Circle colour of each borough according to the amount of deaths within the range.
+     * Accesses ProcessData in order to get a hashmap of this data.
+     */
     @FXML
     public void changeCircleColour(){
         HashMap<String, Integer> deaths = process.getTotalDeathsHashMap();
@@ -121,6 +128,10 @@ public class BoroughPanels{
         }
     }
     
+    /**
+     * Determines the color depending on the value passed into the 
+     * method
+     */
     private Color colourGrade(int value){
         if(value < 60000){
             return Color.web("#ADFF2F40");
@@ -132,6 +143,11 @@ public class BoroughPanels{
         return Color.WHITE;
     }
     
+    /**
+     * Creates a new stage where the specific borough information is used in order to
+     * display a table to the user
+     * Calls upon the TableLoaderLayout class to get the GUI elements.
+     */
     @FXML
     private void switchToSpecificBorough(MouseEvent event) throws IOException{
         Stage stageTwo = new Stage();
