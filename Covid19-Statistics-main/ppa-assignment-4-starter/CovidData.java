@@ -1,11 +1,9 @@
-import javafx.fxml.FXML;
-import javafx.scene.control.Label;
- 
-
-/**
+ /**
  * Represents one record in the COVID dataset.
  * This is essentially one row in the data table. Each column
  * has a corresponding field.
+ * 
+ * @version: 3.1
  */ 
 
 public class CovidData {
@@ -42,16 +40,6 @@ public class CovidData {
     private int workplacesGMR;
     private int residentialGMR;
 
-    @FXML private Label rnrStat;
-    @FXML private Label gnpStat;
-    @FXML private Label pStat;
-    @FXML private Label tsStat;
-    @FXML private Label wStat;
-    @FXML private Label rStat;
-    @FXML private Label ncStat;
-    @FXML private Label tcStat;
-    @FXML private Label ndStat;
-    @FXML private Label tdStat;
 
 
     public CovidData(String date, String borough, int retailRecreationGMR, int groceryPharmacyGMR, 
@@ -73,28 +61,6 @@ public class CovidData {
     }
 
 
-    public int chooseStat(Label statName){
-        if (statName.equals(rnrStat)){
-            return getRetailRecreationGMR();
-        } else if (statName.equals(gnpStat)){
-            return getGroceryPharmacyGMR();
-        } else if(statName.equals(pStat)){
-            return getParksGMR();
-        } else if(statName.equals(tsStat)){
-            return getTransitGMR();
-        } else if(statName.equals(wStat)){
-            return getWorkplacesGMR();
-        } else if(statName.equals(rStat)){
-            return getResidentialGMR();
-        } else if(statName.equals(ncStat)){
-            return getNewCases();
-        } else if(statName.equals(ndStat)){
-            return getNewDeaths();
-        }
-        return -1;
-    }
-    
-    
     public String getDate() {
         return date;
     }
