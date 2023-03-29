@@ -26,7 +26,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label alignment="CENTER" prefHeight="212.0" prefWidth="248.0" style="-fx-border-color: black;" text="Highest Average Retail and Recreation GMR" textAlignment="CENTER" underline="true" wrapText="true">
+            <Label alignment="CENTER" prefHeight="212.0" prefWidth="248.0" style="-fx-border-color: black;" text="Highest Retail and Recreation GMR" textAlignment="CENTER" underline="true" wrapText="true">
                <font>
                   <Font size="19.0" />
                </font>
@@ -34,27 +34,27 @@
                   <Insets />
                </GridPane.margin>
             </Label>
-            <Label alignment="CENTER" prefHeight="152.0" prefWidth="184.0" style="-fx-border-color: black;" text="Highest Average Grocery and Pharmacy GMR" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="1">
+            <Label alignment="CENTER" prefHeight="152.0" prefWidth="184.0" style="-fx-border-color: black;" text="Highest Grocery and Pharmacy GMR" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="1">
                <font>
                   <Font size="19.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="145.0" prefWidth="179.0" style="-fx-border-color: black;" text="Highest Average Parks GMR" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="2">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="145.0" prefWidth="179.0" style="-fx-border-color: black;" text="Highest Parks GMR" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="2">
                <font>
                   <Font size="19.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" prefHeight="122.0" prefWidth="171.0" style="-fx-border-color: black;" text="Highest Average Workplaces GMR" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="4">
+            <Label alignment="CENTER" prefHeight="122.0" prefWidth="171.0" style="-fx-border-color: black;" text="Highest Workplaces GMR" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="4">
                <font>
                   <Font size="19.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" prefHeight="132.0" prefWidth="173.0" style="-fx-border-color: black;" text="Highest Average Transit Stations GMR" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="3">
+            <Label alignment="CENTER" prefHeight="132.0" prefWidth="173.0" style="-fx-border-color: black;" text="Highest Transit Stations GMR" textAlignment="CENTER" underline="true" wrapText="true" GridPane.columnIndex="3">
                <font>
                   <Font size="19.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" prefHeight="133.0" prefWidth="194.0" style="-fx-border-color: black;" text="Highest Average Residential GMR" textAlignment="CENTER" underline="true" wrapText="true" GridPane.rowIndex="2">
+            <Label alignment="CENTER" prefHeight="133.0" prefWidth="194.0" style="-fx-border-color: black;" text="Highest Residential GMR" textAlignment="CENTER" underline="true" wrapText="true" GridPane.rowIndex="2">
                <font>
                   <Font size="19.0" />
                </font>
