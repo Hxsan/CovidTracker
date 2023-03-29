@@ -213,19 +213,26 @@ public class AffectedBoroughsPanel
     }
     
     public void getHighestTC(){
+        int currentHighest = -100000000;
         for(CovidData data : process.getCovidDataArr()){
             if(data.getDate().equals(process.getToDate())){
-                tcStat.setText("" + data.getBorough() + "\n" + data.getTotalCases() + "\n" + data.getDate());
+                if(data.getTotalCases() > currentHighest){
+                    currentHighest = data.getTotalCases();
+                }
             }
         }
+        tcStat.setText("" + data.getBorough() + "\n" + data.getTotalCases() + "\n" + data.getDate());
     }
     
     public void getHighestTD(){
         for(CovidData data : process.getCovidDataArr()){
             if(data.getDate().equals(process.getToDate())){
-                tdStat.setText("" + data.getBorough() + "\n" + data.getTotalDeaths() + "\n" + data.getDate());
+                if(data.getTotalDeaths() > currentHighest){
+                    currentHighest = data.getTotalDeaths();
+                }
             }
         }
+        tdStat.setText("" + data.getBorough() + "\n" + data.getTotalDeaths() + "\n" + data.getDate());
     }
     
     /*
