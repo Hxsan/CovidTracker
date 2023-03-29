@@ -1,12 +1,3 @@
-/**
- * CovidDataLaoder is used to convert the csv file entries into a
- * manageable arraylist to be used by other classes. It uses type
- * CovidData so the getter methods from that class can be used universally
- * 
- * @version: 3.1
- * 
- */
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;

@@ -1,10 +1,9 @@
+
 /**
- * StatisticsPanel describes the data using averages and how it looks
- * respective to all the other boroughs, this is done by using the mean 
- * and getting averages accordingly.
+ * Write a description of class StatisticsPanel here.
  *
- * @version: 3.1
- * @author: Mohammed Ahmed(K22026228), Shahriar Miah(K22023070), Christopher Herre(K22001776), Talal AlOhali(K21130307)
+ * @author (your name)
+ * @version (a version number or a date)
  */
 import java.io.IOException;
 import javafx.fxml.FXML;
@@ -21,12 +20,12 @@ public class StatisticsPanel{
     @FXML private Label Statistic;
     @FXML private Button prevButton;
     @FXML private Button nextButton;
-    private int statNumber = -1;
+    int statNumber = -1;
     
     public StatisticsPanel(){
         process = new ProcessData();
-        
     }
+    
     @FXML
     private void switchToBorough() throws IOException{
         GUIManager.setRoot("Panel2");
@@ -37,19 +36,21 @@ public class StatisticsPanel{
         GUIManager.setRoot("Panel4");
     }
     
-    private void changeData(){
+    
+    public void changeData(){
         if (statNumber == 0){
             Statistic.setText(String.valueOf(calclulateTotalDeaths()));
-            Statistic_Name.setText("Total Number of Deaths");
+            Statistic_Name.setText("Total Number of Deaths\n(within time period)");
         }
+        
         else if (statNumber == 1){
             Statistic.setText(String.valueOf(averageTotalCases()));
-            Statistic_Name.setText("Average of Total Cases");
+            Statistic_Name.setText("Average Total Cases\n(for a single borough)");
         }
         
         else if (statNumber == 2){
             Statistic.setText(String.valueOf(highestTotalDeaths()));
-            Statistic_Name.setText("Highest Total Death Day");
+            Statistic_Name.setText("Date with Highest Total Deaths");
         }
         else if (statNumber == 3){
             Statistic.setText(String.valueOf(averageParks()));
@@ -60,25 +61,28 @@ public class StatisticsPanel{
             Statistic_Name.setText("Average of TransitStationsGMR");
         }
         
-        else{
+        else if (statNumber > 4){
             statNumber = 0;
+            changeData();
         }
         
+        else{
+            statNumber = 4;
+            changeData();
+        }
     }
     
-    @FXML
-    private void nextData(){
+    public void nextData(){
         statNumber +=1;
         changeData();
     }
     
-    @FXML
-    private void prevData(){
+    public void prevData(){
         statNumber -=1;
         changeData();
     }
     
-    private int calclulateTotalDeaths(){
+    public int calclulateTotalDeaths(){
         int toDeaths = 0;
         int fromDeaths = 0;
         for(CovidData data : process.getCovidDataArr()){
@@ -89,13 +93,11 @@ public class StatisticsPanel{
             if(data.getDate().equals(process.getToDate())){
                 toDeaths += data.getTotalDeaths();
             }
-            
         }
         return toDeaths - fromDeaths;
-    
     }
     
-    private double averageTotalCases(){
+    public double averageTotalCases(){
         int toCases = 0;
         int fromCases = 0;
         for(CovidData data : process.getCovidDataArr()){
@@ -106,17 +108,15 @@ public class StatisticsPanel{
             if(data.getDate().equals(process.getToDate())){
                 toCases += data.getTotalCases();
             }
-            
         }
         return (toCases - fromCases)/33;
     }
     
-    
-    private String highestTotalDeaths(){
+    public String highestTotalDeaths(){
         return process.getToDate();
     }
     
-    private double averageParks(){
+    public double averageParks(){
         int total =0;
         int count = 0;
         for(CovidData key : process.getCovidDataArr()){
@@ -125,11 +125,10 @@ public class StatisticsPanel{
                 count +=1;
             }
         }
-        
         return total/count;
     }
     
-    private int averageTransitStations(){
+    public int averageTransitStations(){
         int total =0;
         int count = 0;
         for(CovidData key : process.getCovidDataArr()){
@@ -138,7 +137,6 @@ public class StatisticsPanel{
                 count +=1;
             }
         }
-        
         return total/count;
     }
 }

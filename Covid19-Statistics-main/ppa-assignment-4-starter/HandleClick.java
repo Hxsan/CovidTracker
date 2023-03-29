@@ -1,14 +1,13 @@
-/**
- * HandleClick is used to get the event from clicking on an object, it is used to get object
- * data and return it in a useful format
- *
- * @version: 3.1
- * @author: Mohammed Ahmed(K22026228), Shahriar Miah(K22023070), Christopher Herre(K22001776), Talal AlOhali(K21130307)
- */
 import javafx.event.EventHandler;
 import javafx.scene.Node;
 import javafx.scene.input.MouseEvent;
 
+/**
+ * Write a description of class HandleClick here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
 
 public class HandleClick implements EventHandler<MouseEvent>{
     private static String fxid;

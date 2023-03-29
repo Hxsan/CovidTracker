@@ -55,7 +55,7 @@
                         <Image url="@Covid.jpg" />
                      </image>
                   </ImageView>
-                  <Button fx:id="dateProcess" layoutX="187.0" layoutY="349.0" mnemonicParsing="false" onAction="#processDates" prefHeight="39.0" prefWidth="356.0" text="Process Dates Entered" />
+                  <Button fx:id="dateProcess" layoutX="187.0" layoutY="349.0" mnemonicParsing="false" onAction="#ProcessDates" prefHeight="39.0" prefWidth="356.0" text="Process Dates Entered" />
                   <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="284.0" prefHeight="39.0" prefWidth="718.0" textFill="#ff0707">
                      <font>
                         <Font size="18.0" />

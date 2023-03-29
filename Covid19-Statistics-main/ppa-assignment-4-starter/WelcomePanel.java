@@ -1,11 +1,3 @@
-/**
- * WelcomePanel is the first introductory panel shown to the user, it describes how to use
- * the GUI and how to navigate and read through the data range chosen
- * 
- * @version: 3.1
- * @author: Mohammed Ahmed(K22026228), Shahriar Miah(K22023070), Christopher Herre(K22001776), Talal AlOhali(K21130307)
- */
-
 import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
@@ -13,6 +5,7 @@ import java.util.ArrayList;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import java.util.Date;
+
 
 import java.time.LocalDate;
 
@@ -51,10 +44,6 @@ public class WelcomePanel{
         return dateConv;
     }
     
-    /**
-     * Checks whether the entered date is within the valid range, an error label will pop up
-     * if the entry is invalid
-     */
     @FXML
     private Boolean getValidity(){
         Integer from = Integer.valueOf(returnFromDate().replace("-",""));
@@ -70,38 +59,30 @@ public class WelcomePanel{
         return false;
     }
     
-    /**
-     * The button used to process the dates entered in order to allow access to the other panels by
-     * the user, the dates reset upon returning back to the welcome panel as processing needs to occur before
-     * moving between panels.
-     */
     @FXML
-    private Boolean processDates() throws IOException{
+    private Boolean ProcessDates() throws IOException{
         nextButton.setDisable(true);
+        prevButton.setDisable(true);
         if(getValidity() == true){
             nextButton.setDisable(false);
+            prevButton.setDisable(false);
             errorLabel.setText("");
             return true;
         }
         return false;
     }
     
-    /**
-     * Used by the next button in order to move from welcome panel to
-     * the next panel to the right.
-     */
     @FXML
     private void switchToBoroughs() throws IOException{
-        if(processDates() == true){
+        if(ProcessDates() == true){
             GUIManager.setRoot("Panel2");
         }
     }
     
     @FXML
     private void switchToAffectedBoroughs() throws IOException{
-        if(processDates() == true){
+        if(ProcessDates() == true){
             GUIManager.setRoot("Panel4");
         }
     }
 }
-

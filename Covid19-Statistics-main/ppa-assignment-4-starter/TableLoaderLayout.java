@@ -1,13 +1,3 @@
-/**
- * The TableLoaderLayout class is used to build the table so all the 
- * data can be sorted and displayed in an easy to read format.
- * SceneBuilder was used to make the GUI and it was manually converted to Java as
- * it was easier to call the column objects.
- * 
- * @version: 3.1
- * @author: Mohammed Ahmed(K22026228), Shahriar Miah(K22023070), Christopher Herre(K22001776), Talal AlOhali(K21130307)
- */
-
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TableColumn;
@@ -54,6 +44,9 @@ public class TableLoaderLayout extends Pane {
         boroughName.setAlignment(javafx.geometry.Pos.CENTER);
         anchorPane.getChildren().add(boroughName);
         
+        //ScrollPane scrollPane = new ScrollPane();
+        //scrollPane.setPrefSize(946, 333);
+        
         table = new TableView();
         table.setPrefSize(1030, 306);
         
@@ -97,6 +90,8 @@ public class TableLoaderLayout extends Pane {
         table.getColumns().addAll(dateCol, boroughCol, retailAndRecreationCol, groceryAndPharmacyCol, parksCol, transitStationsCol,
                                 workplacesCol, residentialCol, newCasesCol, totalCasesCol, newDeathsCol, totalDeathsCol);
         
+        //scrollPane.setContent(table);
+        
         root.getChildren().addAll(anchorPane, table);
         
         getChildren().add(root);
@@ -104,7 +99,6 @@ public class TableLoaderLayout extends Pane {
     }
     
     public void initialize(MouseEvent event){
-        // sets up the default values for each column and adds it to the table
         dateCol.setCellValueFactory(new PropertyValueFactory<>("date"));
         boroughCol.setCellValueFactory(new PropertyValueFactory<>("borough"));
         retailAndRecreationCol.setCellValueFactory(new PropertyValueFactory<>("retailRecreationGMR"));

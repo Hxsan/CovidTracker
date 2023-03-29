@@ -4,6 +4,7 @@ import javafx.scene.input.MouseEvent;
 import java.util.ArrayList;
 import javafx.scene.control.Label;
 import javafx.scene.control.Button;
+import java.util.HashMap;
 
 /**
  * Write a description of class MostAffectedBoroughsPanel here.
@@ -26,24 +27,31 @@ public class AffectedBoroughsPanel
     @FXML private Label ndStat;
     @FXML private Label tdStat;
     
+    private ArrayList<Label> stats = new ArrayList<>();
+    
+    @FXML
+    public void initialize(){
+        getStats();
+    }
+    
     /**
      * Constructor for objects of class MostAffectedBoroughsPanel
      */
     public AffectedBoroughsPanel()
     {
         process = new ProcessData();
+        
+        stats.add(rnrStat);
+        stats.add(gnpStat);
+        stats.add(pStat);
+        stats.add(tsStat);
+        stats.add(wStat);
+        stats.add(rStat);
+        stats.add(ncStat);
+        stats.add(ncStat);
+        stats.add(ndStat);
     }
-    private ArrayList<Label> stats = new ArrayList<>();
-    
-    private void addToArrList(){
-        stats.add(rnrStat);
-        stats.add(rnrStat);
-        stats.add(rnrStat);
-        stats.add(rnrStat);
-        stats.add(rnrStat);
-        stats.add(rnrStat);
-        stats.add(rnrStat);
-    }
+
     
     @FXML
     private void switchToStatistics() throws IOException{
@@ -55,13 +63,13 @@ public class AffectedBoroughsPanel
         GUIManager.setRoot("Panel1");
     }
     
-    public void getHighestRnRGMR(int y)
+    public void getHighestRnR()
     {
         int currentHighest = -1000000000;
         String borough = "";
         String date = "";
         for(CovidData data : process.getCovidDataArr()){
-            if (data.getRetailRecreationGMR()> currentHighest){
+            if (data.getRetailRecreationGMR() > currentHighest){
                 currentHighest = data.getRetailRecreationGMR();
                 borough = data.getBorough();
                 date = data.getDate();
@@ -69,19 +77,29 @@ public class AffectedBoroughsPanel
         }
         rnrStat.setText(""+ borough + "\n" + currentHighest + "\n" + date);
     }
-
-    public void getHighestGnPGMR(int y)
+    
+    public void getStats()
     {
-        int currentHighest = -1000000000;
+        int currentHighest = -100000000;
         String borough = "";
         String date = "";
-        for(CovidData data : process.getCovidDataArr()){
-            if (data.getGroceryPharmacyGMR()> currentHighest){
-                currentHighest = data.getGroceryPharmacyGMR();
-                borough = data.getBorough();
-                date = data.getDate();
+        
+        
+        for(Label stat : stats){
+            for(CovidData data : process.getCovidDataArr()){
+                if(!(process.convertDate(data.getDate()).before(process.convertDate(process.getFromDate())) || process.convertDate(data.getDate()).after(process.convertDate(process.getToDate())))){
+                    if(data.chooseStat(stat) > currentHighest){
+                        currentHighest = data.chooseStat(stat);
+                        borough = data.getBorough();
+                        date = data.getDate();
+                    }
+                }
+                stat.setText(""+ borough + "\n" + currentHighest + "\n" + date);
+                
+                currentHighest = -100000000;
+                borough = "";
+                date = "";
             }
         }
-        
     }
 }
