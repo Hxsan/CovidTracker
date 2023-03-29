@@ -33,7 +33,7 @@ public class StatisticsPanel{
     }
     
     @FXML
-    private void switchToAffectedBorough() throws IOException{
+    private void switchToAffectedBoroughs() throws IOException{
         GUIManager.setRoot("Panel4");
     }
     
